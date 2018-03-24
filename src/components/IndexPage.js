@@ -5,7 +5,7 @@ class IndexPage extends Component {
 
 	render() {
     	return (
-    		<div class="index-main-container">
+    		<div className="index-main-container">
 	    		<div>Index Start</div>
 	    		  <ul>
 			        <li>
