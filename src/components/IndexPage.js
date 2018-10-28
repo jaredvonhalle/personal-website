@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Nasa from './Nasa';
 
 class IndexPage extends Component {
 
@@ -10,6 +11,7 @@ class IndexPage extends Component {
 	    		  <ul>
 			        <li>
 			        	<Link to='/blog'>Blog</Link>
+								<Nasa />
 			        </li>
 			      </ul>
 	    		<div>Index End</div>
