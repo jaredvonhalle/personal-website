@@ -10,6 +10,9 @@ import App from './components/App';
 const app = new Express();
 const server = new Server(app);
 
+const blah = "blah";
+console.log(blah);
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
