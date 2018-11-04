@@ -14,6 +14,7 @@ const blah = "blah";
 console.log(blah);
 
 app.set('view engine', 'ejs');
+console.log(path.join(__dirname, 'views'));
 app.set('views', path.join(__dirname, 'views'));
 
 // define the folder that will be used for static assets
