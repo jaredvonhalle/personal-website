@@ -9,7 +9,4 @@ const AppClient = () => (
   </BrowserRouter>
 );
 
-
-window.onload = () => {
-  render(<AppClient />, document.getElementById('main'));
-};
+render(<AppClient />, document.getElementById('main'));

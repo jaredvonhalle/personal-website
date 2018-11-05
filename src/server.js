@@ -10,21 +10,11 @@ import App from './components/App';
 const app = new Express();
 const server = new Server(app);
 
-const blah = "blah";
-console.log(blah);
-
 app.set('view engine', 'ejs');
-console.log(path.join(__dirname, 'views'));
 app.set('views', path.join(__dirname, 'views'));
 
 // define the folder that will be used for static assets
 app.use(Express.static(path.join(__dirname, 'static')));
-
-
-//var express = require('express');
-//var router = express.Router();
-//app.use('/', router);
-
 
 // universal routing and rendering
 app.get('*', (req, res) => {
@@ -53,9 +43,12 @@ app.get('*', (req, res) => {
   return res.status(status).render('index', { markup });
 });
 
+//console.log(app.get('env'));
+//console.log(process.env.NODE_ENV);
+//const env = process.env.NODE_ENV || 'production';
+
 // start the server
 const port = process.env.PORT || 3002;
-const env = process.env.NODE_ENV || 'production';
 server.listen(port, (err) => {
   if (err) {
     return console.error(err);
