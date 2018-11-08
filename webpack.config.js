@@ -4,6 +4,7 @@ var nodeExternals = require('webpack-node-externals');
 
 const serverConfig = {
   mode: 'development',
+  devtool: 'inline-source-map',
   target: 'node',
   externals: [nodeExternals()],
   entry: {
@@ -17,7 +18,13 @@ const serverConfig = {
   module: {
     rules: [
     {
-      test: path.join(__dirname, 'src'),
+        test:/\.css$/,
+        use:[
+          { loader: "css-loader" }
+        ]
+    },
+    {
+      test: /\.jsx$|\.es6$|\.js$/,
       use: {
         loader: 'babel-loader'
       },
@@ -30,6 +37,7 @@ const serverConfig = {
 
 const clientConfig = {
   mode: 'development',
+  devtool: 'inline-source-map', 
   entry: {
     client: path.join(__dirname, 'src', 'app-client.js')
   },
@@ -41,7 +49,14 @@ const clientConfig = {
   module: {
     rules: [
     {
-      test: path.join(__dirname, 'src'),
+        test:/\.css$/,
+        use:[
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+    },
+    {
+      test: /\.jsx$|\.es6$|\.js$/,
       use: {
         loader: 'babel-loader'
       },
