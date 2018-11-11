@@ -28,7 +28,14 @@ const serverConfig = {
       use: {
         loader: 'babel-loader'
       },
-    }]
+    },
+    {
+      test: /\.(png|jp(e*)g|svg)$/,  
+      use: {
+          loader: 'url-loader',
+      }
+    }
+  ]
   },
   node: {
     __dirname: true
@@ -61,7 +68,14 @@ const clientConfig = {
         loader: 'babel-loader'
       },
       exclude:path.join(__dirname, "node_modules"),
-    }]
+    },
+    {
+      test: /\.(png|jp(e*)g|svg)$/,  
+      use: {
+          loader: 'url-loader',
+      }
+    }
+  ]
   }
 };
 
