@@ -8,11 +8,12 @@ const serverConfig = {
   target: 'node',
   externals: [nodeExternals()],
   entry: {
-    server: path.join(__dirname, 'src', 'server.js')
+    server: path.resolve(__dirname, 'src', 'server.js')
   },
   output: {
-    path: path.join(__dirname, 'src', 'static', 'js'),
-    filename: 'server.bundle.js'
+    path: path.resolve(__dirname, 'src', 'static', 'js'),
+    filename: 'server.bundle.js',
+    publicPath: '/'
 
   },
   module: {
@@ -46,11 +47,12 @@ const clientConfig = {
   mode: 'development',
   devtool: 'inline-source-map', 
   entry: {
-    client: path.join(__dirname, 'src', 'app-client.js')
+    client: path.resolve(__dirname, 'src', 'app-client.js')
   },
   output: {
-    path: path.join(__dirname, 'src', 'static', 'js'),
-    filename: 'client.bundle.js'
+    path: path.resolve(__dirname, 'src', 'static', 'js'),
+    filename: 'client.bundle.js',
+    publicPath: '/'
 
   },
   module: {
@@ -67,7 +69,7 @@ const clientConfig = {
       use: {
         loader: 'babel-loader'
       },
-      exclude:path.join(__dirname, "node_modules"),
+      exclude:path.resolve(__dirname, "node_modules"),
     },
     {
       test: /\.(png|jp(e*)g|svg)$/,  

@@ -5,10 +5,10 @@ class ComputerMonitor extends Component {
 
 	render() {
     	return (
-            <div className="index-computer-monitor row">
-                <div className="index-computer-monitor-text col">
-                    <div>line one</div>
-                    <div>line two</div>
+            <div className="computer-monitor row">
+                <div className="computer-monitor-text col">
+                    <div className="computer-monitor-text-name">Jared von Halle</div>
+                    <div className="computer-monitor-text-about">Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared. Description about Jared.</div>
                 </div>
             </div>
         );

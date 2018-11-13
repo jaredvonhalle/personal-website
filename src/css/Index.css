@@ -1,17 +1,62 @@
 .index-computer {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
-.index-computer-monitor {
+.computer-monitor {
     background: url("../images/computer.svg");
     background-repeat: no-repeat;
     height: 70vh;
 }
 
+.computer-monitor-text {
+    margin-top: 10%;
+    color: #00FF00;
+}
+
+.computer-monitor-text-name {
+    text-align: center;
+}
+
+.computer-monitor-text-about {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    overflow: scroll;
+    max-height: 50%;
+}
+
 .index-computer-keyboard {
-    background: url("../images/keyboard2.svg");
+    background: url("../images/keyboard.svg");
     background-repeat: no-repeat;
     height: 20vh;
+    margin-top: 2vh;
+}
+
+.computer-keyboard-keys-row-1 {
+    margin-top: 2vh;
+    margin-left: 12%;
+    margin-right: 6%;
+}
+
+.computer-keyboard-keys-row-2 {
+    margin-top: 1vh;
+    margin-left: 6%;
+    margin-right: 12%;
+}
+
+.computer-key {
+    background: url("../images/generickey.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.computer-key-long {
+    background: url("../images/key.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 20vh;
 }

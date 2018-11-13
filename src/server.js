@@ -6,6 +6,11 @@ import { renderToString} from 'react-dom/server';
 import { StaticRouter} from 'react-router-dom';
 import App from './components/App';
 
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const config = require('../webpack.config.js');
+const compiler = webpack(config);
+
 // initialize the server and configure support for ejs templates
 const app = new Express();
 const server = new Server(app);
@@ -15,6 +20,13 @@ app.set('views', path.join(__dirname, 'views'));
 
 // define the folder that will be used for static assets
 app.use(Express.static(path.join(__dirname, 'static')));
+
+/*
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: config[0].output.publicPath
+}));
+*/
+
 
 // universal routing and rendering
 app.get('*', (req, res) => {
