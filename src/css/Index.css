@@ -12,7 +12,7 @@
 
 .computer-monitor-text {
     margin-top: 10%;
-    color: #00FF00;
+    color: green;
 }
 
 .computer-monitor-text-name {
@@ -47,6 +47,54 @@
 
 .computer-key {
     background: url("../images/generickey.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.github-key-1 {
+    background: url("../images/githubKey1.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.github-key-2 {
+    background: url("../images/githubKey2.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.github-key-3 {
+    background: url("../images/githubKey3.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.github-key-4 {
+    background: url("../images/githubKey4.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.github-key-5 {
+    background: url("../images/githubKey5.svg");
+    background-repeat: no-repeat;
+    float: left;
+    height: 6vh;
+    width: 10vh;
+}
+
+.linkedin-key-1 {
+    background: url("../images/linkedinkey1.svg");
     background-repeat: no-repeat;
     float: left;
     height: 6vh;

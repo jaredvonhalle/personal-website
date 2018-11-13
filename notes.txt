@@ -1,0 +1,15 @@
+To Do
+
+CSS
+    percentage vs. vh
+    Sass
+webpack
+Dev
+    npm scripts
+Node
+    NextJS
+    Redux
+
+
+npx webpack --watch
+npx nodemon /path/to/server/bundle.js

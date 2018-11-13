@@ -9,9 +9,9 @@ class ComputerKeyboard extends Component {
                 <div className="index-computer-keyboard-text col">
                     <div className="computer-keyboard-keys-row-1 row justify-content-around">
                         <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
+                        <div className="github-key-1 col"></div>
+                        <div className="github-key-2 col"></div>
+                        <div className="linkedin-key-1 col"></div>
                         <div className="computer-key col d-none d-lg-block"></div>
                         <div className="computer-key col d-none d-lg-block"></div>
                         <div className="computer-key col"></div>
@@ -19,9 +19,9 @@ class ComputerKeyboard extends Component {
                     </div>
                     <div className="computer-keyboard-keys-row-2 row justify-content-around">
                         <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
-                        <div className="computer-key col"></div>
+                        <div className="github-key-3 col"></div>
+                        <div className="github-key-4 col"></div>
+                        <div className="github-key-5 col"></div>
                         <div className="computer-key col d-none d-lg-block"></div>
                         <div className="computer-key col d-none d-lg-block"></div>
                         <div className="computer-key col"></div>
