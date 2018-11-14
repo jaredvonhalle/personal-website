@@ -7,8 +7,17 @@ webpack
 Dev
     npm scripts
 Node
+    Modules
     NextJS
     Redux
+
+
+Keys
+    Github
+    Email
+    Instagram
+    Facebook
+
 
 
 npx webpack --watch
