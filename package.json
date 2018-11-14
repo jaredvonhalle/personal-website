@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildDev": "NODE_ENV=development webpack",
-    "buildProd": "NODE_ENV=production webpack -p",
-    "startDev": "NODE_ENV=development node_modules/.bin/babel-node --presets react,es2015 src/server.js",
-    "startProd": "NODE_ENV=development node_modules/.bin/babel-node --presets react,es2015 src/server.js",
-    "buildStartDev": "NODE_ENV=development webpack && node_modules/.bin/babel-node src/server.js",
+    "build": "npx babel src/server.js -o src/server.out.js",
+    "start": "npx nodemon src/server.out.js",
+    "buildandstart": "npm run build && npm run start",
     "watch": "npx webpack --watch"
   },
   "author": "",
