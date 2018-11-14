@@ -1,55 +1,4 @@
 const path = require('path');
-var nodeExternals = require('webpack-node-externals');
-
-const serverConfig = {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  target: 'node',
-  externals: [nodeExternals()],
-  entry: {
-    server: path.resolve(__dirname, 'src', 'server.js')
-  },
-  output: {
-    path: path.resolve(__dirname, 'src', 'static', 'js'),
-    filename: 'server.bundle.js',
-    publicPath: '/'
-
-  },
-  module: {
-    rules: [
-      /*
-      {
-        test: /\.scss$/,
-        use: [
-            "style-loader", // creates style nodes from JS strings
-            "css-loader", // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
-        ]
-    }, */
-    {
-        test:/\.css$/,
-        use:[
-          { loader: "css-loader" }
-        ]
-    },
-    {
-      test: /\.jsx$|\.es6$|\.js$/,
-      use: {
-        loader: 'babel-loader'
-      },
-    },
-    {
-      test: /\.(png|jp(e*)g|svg)$/,  
-      use: {
-          loader: 'url-loader',
-      }
-    }
-  ]
-  },
-  node: {
-    __dirname: true
-  }
-};
 
 const clientConfig = {
   mode: 'development',
@@ -97,4 +46,4 @@ const clientConfig = {
   }
 };
 
-module.exports = [ serverConfig, clientConfig ];
+module.exports = clientConfig;

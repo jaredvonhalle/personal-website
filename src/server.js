@@ -1,16 +1,16 @@
 import path from 'path';
 import { Server } from 'http';
 import Express from 'express';
-import React from 'react';
-import { renderToString} from 'react-dom/server';
-import { StaticRouter} from 'react-router-dom';
-import App from './components/App';
+//import React from 'react';
+//import { renderToString} from 'react-dom/server';
+//import { StaticRouter} from 'react-router-dom';
+//import App from './components/App';
 
 // initialize the server and configure support for ejs templates
 const app = new Express();
 const server = new Server(app);
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); 
 app.set('views', path.join(__dirname, 'views'));
 
 // define the folder that will be used for static assets
@@ -18,29 +18,7 @@ app.use(Express.static(path.join(__dirname, 'static')));
 
 // universal routing and rendering
 app.get('*', (req, res) => {
-  let markup = '';
-  let status = 200;
-
-  const context = {};
-  markup = renderToString(
-    <StaticRouter location={req.url} context={context}>
-      <App />
-    </StaticRouter>,
-  );
-
-
-  // context.url will contain the URL to redirect to if a <Redirect> was used
-  if (context.url) {
-    return res.redirect(302, context.url);
-  }
-
-
-  if (context.is404) {
-    status = 404;
-  }
-
-
-  return res.status(status).render('index', { markup });
+  return res.sendFile(path.resolve(__dirname, 'views', 'index.html'));
 });
 
 //console.log(app.get('env'));
