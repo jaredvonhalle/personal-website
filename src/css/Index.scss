@@ -1,0 +1,75 @@
+.index-computer {
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.computer-monitor {
+    background: url("../images/computer.svg");
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.computer-monitor-text {
+    margin-top: 10%;
+    color: green;
+}
+
+.computer-monitor-text-name {
+    text-align: center;
+}
+
+.computer-monitor-text-about {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    overflow: scroll;
+    max-height: 50%;
+}
+
+.index-computer-keyboard {
+    background: url("../images/keyboard.svg");
+    background-repeat: no-repeat;
+    height: 20vh;
+    margin-top: 2vh;
+}
+
+.computer-keyboard-keys-row-1 {
+    margin-top: 2.5vh;
+    margin-left: 12%;
+    margin-right: 6%;
+}
+
+.computer-keyboard-keys-row-2 {
+    margin-top: 1vh;
+    margin-left: 6%;
+    margin-right: 12%;
+}
+
+.computer-key {
+    background: url("../images/generickey.svg");
+    background-repeat: no-repeat;
+    height: 6vh;
+    //width: 10vh;
+    //float: left;
+}
+
+.key-wrap {
+    //overflow: hidden;
+    height: 6vh;
+    width: 10vh;
+    padding: 0;
+}
+
+.key_github {
+    background: url("../images/key_github_raised.svg");
+    background-repeat: no-repeat;
+    //float: left;
+    height: 6vh;
+    width: 10vh;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active { 
+        background: url("../images/key_github_pressed.svg");
+    }
+}

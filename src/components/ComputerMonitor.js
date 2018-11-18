@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Index.css';
+import '../css/Index.scss';
 
 class ComputerMonitor extends Component {
 

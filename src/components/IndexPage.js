@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ComputerMonitor from './ComputerMonitor';
 import ComputerKeyboard from './ComputerKeyboard';
-import '../css/Index.css';
+import '../css/Index.scss';
 
 class IndexPage extends Component {
 
