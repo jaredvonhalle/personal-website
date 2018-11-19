@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import '../css/ComputerKey.scss';
 
-class ComputerKey extends Component {
+class ComputerKeyLink extends Component {
 
     constructor(props) {
         super(props);
@@ -10,12 +10,10 @@ class ComputerKey extends Component {
 	render() {
     	return (
             <div className="key-wrap col">
-                <div className={this.props.classes}></div>
+                <a href={this.props.href} className={this.props.classes} target="_blank"></a>
             </div>
         );
   }
 }
 
-//<div className="computer-key col d-none d-lg-block"></div>
-
-export default ComputerKey;
+export default ComputerKeyLink;

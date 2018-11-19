@@ -60,12 +60,11 @@
     padding: 0;
 }
 
-.key_github {
+.computer-key-github {
     background: url("../images/key_github_raised.svg");
     background-repeat: no-repeat;
-    //float: left;
+    display: block;
     height: 6vh;
-    width: 10vh;
     &:hover {
         cursor: pointer;
     }
