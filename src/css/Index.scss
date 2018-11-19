@@ -72,3 +72,16 @@
         background: url("../images/key_github_pressed.svg");
     }
 }
+
+.computer-key-linkedin {
+    background: url("../images/key_linkedin_raised.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 6vh;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active { 
+        background: url("../images/key_linkedin_pressed.svg");
+    }
+}

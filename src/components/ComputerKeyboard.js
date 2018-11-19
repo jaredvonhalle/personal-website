@@ -15,7 +15,7 @@ class ComputerKeyboard extends Component {
 
         let rowTwoKeyComponents = keyComponents.slice(Math.floor(keyComponents.length / 2), keyComponents.length);
 
-        this.state = {
+        this.keys = {
             rowOneKeys: rowOneKeyComponents,
             rowTwoKeys: rowTwoKeyComponents
         };
@@ -23,15 +23,12 @@ class ComputerKeyboard extends Component {
 
     generateKeys = () => {
         let keyComponents = [];
-
-        //<div className="computer-key col d-none d-lg-block"></div>
-        
         
         keyComponents.push(<ComputerKeyExtra key={1} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={2} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={3} classes="computer-key"/>);
         keyComponents.push(<ComputerKeyLink key={4} classes="computer-key-github" href="https://github.com/jaredvonhalle" />);
-        keyComponents.push(<ComputerKey key={5} classes="computer-key"/>);
+        keyComponents.push(<ComputerKeyLink key={4} classes="computer-key-linkedin" href="https://www.linkedin.com/in/jared-von-halle-61736246/" />);
         keyComponents.push(<ComputerKey key={6} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={7} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={8} classes="computer-key"/>);
@@ -43,23 +40,15 @@ class ComputerKeyboard extends Component {
         return keyComponents;
     }
 
-    getKeys = (start) => {
-        let keyComponents = [];
-        for (var i = start; i <= start + 6; i++) {
-            keyComponents.push(<ComputerKey key={i}/>);
-        }
-        return keyComponents;
-    }
-
 	render() {
     	return (
             <div className="index-computer-keyboard row">
                 <div className="index-computer-keyboard-text col">
                     <div className="computer-keyboard-keys-row-1 row justify-content-around">
-                        {this.state.rowOneKeys}
+                        {this.keys.rowOneKeys}
                     </div>
                     <div className="computer-keyboard-keys-row-2 row justify-content-around">
-                        {this.state.rowTwoKeys}
+                        {this.keys.rowTwoKeys}
                     </div>
                 </div>
             </div>
