@@ -1,3 +1,8 @@
+@font-face {
+    font-family: mainframe;
+    src: url("../fonts/MAINBRG_.ttf") format('truetype');;
+}
+
 .index-computer {
     margin-top: 5vh;
     margin-left: 10vh;
@@ -13,6 +18,7 @@
 .computer-monitor-text {
     margin-top: 10%;
     color: green;
+    font-family: mainframe;
 }
 
 .computer-monitor-text-name {

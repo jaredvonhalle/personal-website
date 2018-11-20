@@ -28,7 +28,7 @@ class ComputerKeyboard extends Component {
         keyComponents.push(<ComputerKey key={2} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={3} classes="computer-key"/>);
         keyComponents.push(<ComputerKeyLink key={4} classes="computer-key-github" href="https://github.com/jaredvonhalle" />);
-        keyComponents.push(<ComputerKeyLink key={4} classes="computer-key-linkedin" href="https://www.linkedin.com/in/jared-von-halle-61736246/" />);
+        keyComponents.push(<ComputerKeyLink key={5} classes="computer-key-linkedin" href="https://www.linkedin.com/in/jared-von-halle-61736246/" />);
         keyComponents.push(<ComputerKey key={6} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={7} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={8} classes="computer-key"/>);

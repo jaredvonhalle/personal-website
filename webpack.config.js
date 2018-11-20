@@ -9,11 +9,22 @@ const clientConfig = {
   output: {
     path: path.resolve(__dirname, 'src', 'static', 'js'),
     filename: 'client.bundle.js',
-    publicPath: '/'
+    publicPath: '/js/'
 
   },
   module: {
     rules: [
+      {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]'
+            },
+          },
+        ]
+      },
       {
         test: /\.scss$/,
         use: [
