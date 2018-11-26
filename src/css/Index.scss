@@ -16,9 +16,11 @@
 }
 
 .computer-monitor-text {
-    margin-top: 10%;
-    color: green;
+    margin-top: 11vh;
+    color: #66ff66;
     font-family: mainframe;
+    margin-left: 15vh;
+    margin-right: 33vh;
 }
 
 .computer-monitor-text-name {
@@ -26,8 +28,6 @@
 }
 
 .computer-monitor-text-about {
-    margin-left: 10vh;
-    margin-right: 10vh;
     overflow: scroll;
     max-height: 50%;
 }
@@ -89,5 +89,31 @@
     }
     &:active { 
         background: url("../images/key_linkedin_pressed.svg");
+    }
+}
+
+.computer-key-email {
+    background: url("../images/key_email_raised.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 6vh;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active { 
+        background: url("../images/key_email_pressed.svg");
+    }
+}
+
+.computer-key-instagram {
+    background: url("../images/key_instagram_raised.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 6vh;
+    &:hover {
+        cursor: pointer;
+    }
+    &:active { 
+        background: url("../images/key_instagram_pressed.svg");
     }
 }

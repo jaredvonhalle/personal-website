@@ -26,16 +26,17 @@ class ComputerKeyboard extends Component {
         
         keyComponents.push(<ComputerKeyExtra key={1} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={2} classes="computer-key"/>);
-        keyComponents.push(<ComputerKey key={3} classes="computer-key"/>);
+        keyComponents.push(<ComputerKeyLink key={3} classes="computer-key-email" href="mailto:jared.vonhalle@gmail.com" />);
         keyComponents.push(<ComputerKeyLink key={4} classes="computer-key-github" href="https://github.com/jaredvonhalle" />);
         keyComponents.push(<ComputerKeyLink key={5} classes="computer-key-linkedin" href="https://www.linkedin.com/in/jared-von-halle-61736246/" />);
-        keyComponents.push(<ComputerKey key={6} classes="computer-key"/>);
+        keyComponents.push(<ComputerKeyLink key={6} classes="computer-key-instagram" href="https://www.instagram.com/jj_vonvoyage/" />);
         keyComponents.push(<ComputerKey key={7} classes="computer-key"/>);
-        keyComponents.push(<ComputerKey key={8} classes="computer-key"/>);
-        keyComponents.push(<ComputerKey key={9} classes="computer-key"/>);
+        keyComponents.push(<ComputerKeyExtra key={8} classes="computer-key"/>);
+        keyComponents.push(<ComputerKeyExtra key={9} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={10} classes="computer-key"/>);
         keyComponents.push(<ComputerKey key={11} classes="computer-key"/>);
-        keyComponents.push(<ComputerKey key={12} classes="computer-key"/>);keyComponents.push(<ComputerKey key={13} classes="computer-key"/>);keyComponents.push(<ComputerKeyExtra key={14} classes="computer-key"/>);
+        keyComponents.push(<ComputerKey key={12} classes="computer-key"/>);
+        keyComponents.push(<ComputerKey key={13} classes="computer-key"/>);keyComponents.push(<ComputerKey key={14} classes="computer-key"/>);keyComponents.push(<ComputerKey key={15} classes="computer-key"/>);keyComponents.push(<ComputerKeyExtra key={16} classes="computer-key"/>);
         
         return keyComponents;
     }
