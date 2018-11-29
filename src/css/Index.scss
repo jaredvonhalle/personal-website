@@ -1,6 +1,6 @@
 @font-face {
-    font-family: mainframe;
-    src: url("../fonts/MAINBRG_.ttf") format('truetype');;
+    font-family: ticketing;
+    src: url("../fonts/Ticketing.ttf") format('truetype');;
 }
 
 .index-computer {
@@ -18,18 +18,66 @@
 .computer-monitor-text {
     margin-top: 11vh;
     color: #66ff66;
-    font-family: mainframe;
-    margin-left: 15vh;
-    margin-right: 33vh;
+    font-family: ticketing;
+    margin-left: 4vh;
+    margin-right: 18vh;
+    text-indent: -15px;
+    &:first-line {
+        text-indent: 0px;
+    }
+    @media only screen and (min-width: 500px) {
+        margin-left: 6vh;
+        margin-right: 25vh;
+    }
+    @media only screen and (min-width: 600px) {
+		margin-left: 7vh;
+        margin-right: 32vh;
+    }
+    @media only screen and (min-width: 700px) {
+		margin-left: 10vh;
+        margin-right: 38vh;
+    }
+    @media only screen and (min-width: 840px) {
+		margin-left: 12vh;
+        margin-right: 42vh;
+    }
+    @media only screen and (min-width: 940px) {
+		margin-left: 13vh;
+        margin-right: 48vh;
+    }
+    @media only screen and (min-width: 1050px) {
+		margin-left: 14vh;
+        margin-right: 53vh;
+    }
 }
 
 .computer-monitor-text-name {
+    font-size: 25px;
+    margin-left: 2vh;
     text-align: center;
+    margin-bottom: 1.5vh;
 }
 
 .computer-monitor-text-about {
     overflow: scroll;
-    max-height: 50%;
+    list-style-type: none;
+    max-height: 30%;
+    @media only screen and (min-height: 300px) {
+		max-height: 37%;
+    }
+    @media only screen and (min-height: 400px) {
+		max-height: 45%;
+    }
+    @media only screen and (min-height: 500px) {
+		max-height: 48%;
+    }
+}
+
+.computer-monitor-text-about-line {
+    font-size: 18px;
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
 }
 
 .index-computer-keyboard {
