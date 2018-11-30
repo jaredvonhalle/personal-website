@@ -1,4 +1,28 @@
 To Do
+    Improve SASS / CSS
+        Split into multiple files
+    Project Structure
+        Webpack's OutputPath vs Express's Static source
+        Where bundle is built (static, dist, etc.)
+        Dev vs. Prod NPM scripts and build process
+    Productionize
+        Webpack for Prod
+    Styling
+        Better scaling of text inside monitor
+        Better indication of scrolling for the monitor text
+        Power Button on Computer
+    Build and Deploy
+        Containerize using Docker
+        Build Pipeline using Jenkins
+        Tests
+        Run on AWS
+    Clean Up
+        Separate images that are just used in others
+        Old Components
+Major Features
+    Build recipe service on Mongo
+    Pull recipes into Jaredvonhalle.com
+    
 
 CSS
     percentage vs. vh
