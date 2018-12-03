@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const clientConfig = {
   mode: 'development',
@@ -7,9 +8,9 @@ const clientConfig = {
     client: path.resolve(__dirname, 'src', 'app-client.js')
   },
   output: {
-    path: path.resolve(__dirname, 'src', 'static', 'js'),
+    path: path.resolve(__dirname, 'static'),
     filename: 'client.bundle.js',
-    publicPath: '/js/'
+    publicPath: '/'
 
   },
   module: {
@@ -54,7 +55,12 @@ const clientConfig = {
       }
     }
   ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/views/index.html'
+    })
+  ]
 };
 
 module.exports = clientConfig;

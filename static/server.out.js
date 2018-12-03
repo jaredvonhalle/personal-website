@@ -14,11 +14,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //import App from './components/App';
 // initialize the server and configure support for ejs templates
 var app = new _express.default();
-var server = new _http.Server(app);
-app.set('view engine', 'ejs');
-app.set('views', _path.default.join(__dirname, 'views')); // define the folder that will be used for static assets
+var server = new _http.Server(app); // define the folder that will be used for static assets
 
-app.use(_express.default.static(_path.default.join(__dirname, 'static'))); // universal routing and rendering
+app.use(_express.default.static(_path.default.join(__dirname, '..', 'static'))); // universal routing and rendering
 
 app.get('*', function (req, res) {
   return res.sendFile(_path.default.resolve(__dirname, 'views', 'index.html'));
