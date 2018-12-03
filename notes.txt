@@ -2,17 +2,23 @@ To Do
     Improve SASS / CSS
         Split into multiple files
     Project Structure
-        Webpack's OutputPath vs Express's Static source
-        Where bundle is built (static, dist, etc.)
+1)        Webpack's OutputPath vs Express's Static source
+2)        Where bundle is built (static, dist, etc.)
         Dev vs. Prod NPM scripts and build process
     Productionize
         Webpack for Prod
+        SSL Certs
     Styling
         Better scaling of text inside monitor
         Better indication of scrolling for the monitor text
         Power Button on Computer
     Build and Deploy
-        Containerize using Docker
+>>        Containerize using Docker
+        Limit Docer to built files - Multi step build process (multiple FROM in Dockerfile)
+        Host code on Github
+        Docker + Github + hosting image on Docker Hub
+        Run Docker on AWS
+        direct jaredvonhalle.com to site 
         Build Pipeline using Jenkins
         Tests
         Run on AWS
