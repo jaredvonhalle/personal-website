@@ -1,41 +1,59 @@
 To Do
     Improve SASS / CSS
-        Split into multiple files
-    Project Structure
-1)        Webpack's OutputPath vs Express's Static source
-2)        Where bundle is built (static, dist, etc.)
-        Dev vs. Prod NPM scripts and build process
+3)      Split into multiple files
+        Take advantage of SASS features (e.g. better media queries)
     Productionize
         Webpack for Prod
+        Run app in docker as unprivileged user instead of root
+        Look into using Alpine for Docker node image instead of node:latest
         SSL Certs
     Styling
         Better scaling of text inside monitor
         Better indication of scrolling for the monitor text
         Power Button on Computer
     Build and Deploy
->>        Containerize using Docker
-        Limit Docer to built files - Multi step build process (multiple FROM in Dockerfile)
-        Host code on Github
-        Docker + Github + hosting image on Docker Hub
+1)      Speed up npm install portion of Docker image build (doker layer caching)
+2)      NPM Scripts best practices (Dev, Prod, Docker)
+8)      Host code on Github
         Run Docker on AWS
-        direct jaredvonhalle.com to site 
-        Build Pipeline using Jenkins
+        direct jaredvonhalle.com to site
         Tests
-        Run on AWS
+        Build Pipeline using Jenkins
+        Docker + Github + hosting image on Docker Hub
+    Dev Workflow
+        Write a bash scipt(s) to handle docker build steps
+        Developing with containers: changes on local machine auto update container
+        Get a better Git client
     Clean Up
-        Separate images that are just used in others
-        Old Components
+4)      better .gitignore
+5)      Separate images that are just used in others
+6)      Remove old Components
+7)      Remove unused dependencies
+        File hierarchy for Static output
+    Bugs
+        Pin version of event-stream if necessary for docker build
 Major Features
     Build recipe service on Mongo
     Pull recipes into Jaredvonhalle.com
+    Add description page of how site is built
+
+Docker 
+    Layers
+    Multi step builds
+    Base image (e.g. production image as base image for Dev)
+
+Build Script for Docker
+    Get Container ID     
+        ------   
+    Stop container
+        docker stop <containerID>
+    Delete Container
+    Run Container
     
 
 CSS
     percentage vs. vh
-    Sass
-webpack
-Dev
-    npm scripts
+    SASS
 Node
     Modules
     NextJS
