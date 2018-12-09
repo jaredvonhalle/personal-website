@@ -62,4 +62,4 @@ typings/
 
 # build output
 .next
-static
+static/
