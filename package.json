@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack && npx babel src/server.js -o static/server.out.js",
-    "start": "npx nodemon static/server.out.js",
-    "buildandstart": "npm run build && npm run start",
-    "watch": "npx webpack --watch"
+    "start": "if [ $NODE_ENV == \"production\" ]; then node static/server.out.js; else npx nodemon static/server.out.js; fi",
+    "build:prod": "npx webpack && npx babel src/server.js -o static/server.out.js",
+    "build:dev": "npx webpack --watch && npx babel src/server.js -o static/server.out.js"
   },
   "author": "",
   "license": "ISC",
