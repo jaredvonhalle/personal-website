@@ -34,7 +34,6 @@ To Do
 6)      Remove unused dependencies
         File hierarchy for Static output
     Bugs
-        Pin version of event-stream if necessary for docker build
 Major Features
     Build recipe service on Mongo
     Pull recipes into Jaredvonhalle.com
