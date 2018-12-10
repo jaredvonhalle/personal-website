@@ -18,9 +18,7 @@ app.get('*', (req, res) => {
   return res.sendFile(path.resolve(__dirname, 'views', 'index.html'));
 });
 
-//console.log(app.get('env'));
-//console.log(process.env.NODE_ENV);
-//const env = process.env.NODE_ENV || 'production';
+console.log("NODE_ENV:" + process.env.NODE_ENV);
 
 // start the server
 const port = process.env.PORT || 3002;
