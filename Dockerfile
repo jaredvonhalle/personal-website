@@ -7,7 +7,7 @@ RUN npm install --production
 RUN cp -R node_modules prod_node_modules
 RUN npm install
 COPY . .
-CMD [ "npm", "run", "build" ]
+CMD [ "npm", "run", "build:prod" ]
 
 FROM base AS release
 COPY --from=dependencies /usr/src/app/static/ static/
