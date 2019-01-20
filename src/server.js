@@ -21,7 +21,7 @@ app.get('*', (req, res) => {
 console.log("NODE_ENV:" + process.env.NODE_ENV);
 
 // start the server
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 80;
 server.listen(port, (err) => {
   if (err) {
     return console.error(err);
