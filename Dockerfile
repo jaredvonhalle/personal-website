@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build:prod
 
-FROM 0
+FROM node:10
 COPY --from=dependencies /usr/src/app/static/ static/
 COPY --from=dependencies /usr/src/app/prod_node_modules/ node_modules/
 EXPOSE 3002
