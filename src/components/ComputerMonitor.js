@@ -9,6 +9,36 @@ import '../css/Index.scss';
 
 class ComputerMonitor extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            aboutTextHeight: '',
+            aboutTextWidth: ''
+        }
+    }
+
+    componentDidMount() {
+        this.resizeAboutText();
+        window.addEventListener("resize", this.resizeAboutText);
+    }
+
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.resizeAboutText);
+    }
+
+    resizeAboutText() {
+        var computerMonitorElement = document.getElementsByClassName('computer-monitor')[0];
+        var computerMonitorTextElement = document.getElementsByClassName('computer-monitor-text')[0];
+
+        var parentWidth = computerMonitorElement.offsetWidth;
+        var childMarginLeft = (parentWidth * .08).toString();
+        var childMarginRight = (parentWidth * .25).toString();
+
+        computerMonitorTextElement.style.marginLeft = childMarginLeft + "px";
+        computerMonitorTextElement.style.marginRight = childMarginRight + "px";
+    }
+
 	render() {
     	return (
             <div className="computer-monitor row">

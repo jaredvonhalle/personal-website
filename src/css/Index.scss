@@ -25,30 +25,6 @@
     &:first-line {
         text-indent: 0px;
     }
-    @media only screen and (min-width: 500px) {
-        margin-left: 6vh;
-        margin-right: 25vh;
-    }
-    @media only screen and (min-width: 600px) {
-		margin-left: 7vh;
-        margin-right: 32vh;
-    }
-    @media only screen and (min-width: 700px) {
-		margin-left: 10vh;
-        margin-right: 38vh;
-    }
-    @media only screen and (min-width: 840px) {
-		margin-left: 12vh;
-        margin-right: 42vh;
-    }
-    @media only screen and (min-width: 940px) {
-		margin-left: 13vh;
-        margin-right: 48vh;
-    }
-    @media only screen and (min-width: 1050px) {
-		margin-left: 14vh;
-        margin-right: 53vh;
-    }
 }
 
 .computer-monitor-text-name {
