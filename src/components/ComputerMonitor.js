@@ -52,7 +52,7 @@ class ComputerMonitor extends Component {
                         PERSONALLY: A perfect Sunday is an active day spent outdoors, includes a Jets victory, and ends with a home cooked meal shared with friends.
                         </li>
                         <li className="computer-monitor-text-about-line">
-                        CURRENTLY: A nomad, taking 6 months off to travel around Asia with my wife, before moving to Colorado.
+                        CURRENTLY: Moved to Denver, Colorado in March 2019 in search of mountains and sunlight. So far so good!
                         </li>
                     </ul>
                 </div>
